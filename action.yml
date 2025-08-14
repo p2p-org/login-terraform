@@ -1,0 +1,14 @@
+name: 'Macbet -  Terraform Login'
+description: 'Login Terraform CLI in your GitHub Actions workflow.'
+author: 'Macbet'
+inputs:
+  cli_config_credentials_list:
+    description: 'A list of hostname and token pairs for HCP Terraform/Terraform Enterprise instances to place within the credentials block of the Terraform CLI configuration file.'
+    default: '[{"hostname": "app.terraform.io", "token": ""}]'
+    required: true
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+branding:
+  icon: 'terminal'
+  color: 'purple'

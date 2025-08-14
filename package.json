@@ -1,0 +1,46 @@
+{
+  "name": "login-terraform",
+  "version": "1.0.0",
+  "description": "Github-actions to login terraform-cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "semistandard --env jest && jest --coverage",
+    "lint": "semistandard --env jest --fix",
+    "build": "ncc build index.js --out dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Macbet/login-terraform.git"
+  },
+  "keywords": [
+    "github-actions",
+    "terraform",
+    "cli",
+    "login"
+  ],
+  "author": "kivenkodaniil@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Macbet/login-terraform/issues"
+  },
+  "homepage": "https://github.com/Macbet/login-terraform#readme",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/exec": "^1.1.1",
+    "@actions/github": "^6.0.1",
+    "@actions/io": "^1.1.3",
+    "@actions/tool-cache": "^2.0.2",
+    "semver": "^7.7.2"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.3",
+    "jest": "^30.0.5",
+    "nock": "^14.0.10",
+    "semistandard": "^17.0.0"
+  },
+  "semistandard": {
+    "ignore": [
+      "**/dist/**"
+    ]
+  }
+}

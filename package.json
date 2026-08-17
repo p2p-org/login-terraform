@@ -33,7 +33,7 @@
     "semver": "^7.7.2"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.38.3",
+    "@vercel/ncc": "^0.45.0",
     "jest": "^30.0.5",
     "nock": "^14.0.10",
     "semistandard": "^17.0.0"
